@@ -1,0 +1,6 @@
+.program led
+.side_set 1
+.wrap_target
+    out x, 32   side 1 // led on, while it waits for pio_sm_put_blocking ?
+    in  x, 32   side 0 // led off, while it waits for pio_sm_get_blocking ?
+.wrap
